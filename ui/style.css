@@ -3,6 +3,7 @@ body {
     background: linear-gradient(90deg,#5b6542,#20948b);
     margin-top: 75px;
     color: #9b4f0f;
+    width: 60px;
 }
 
 .center {
