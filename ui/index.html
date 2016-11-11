@@ -12,10 +12,11 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <div class="loader"></div>
+    <body onLoad="load_func()">
+        <div class="loader" id="loader"></div>
         
-        
+        <div style="display:none;" id="container" class="animate-bottom">
+            
         <div class="center">
             
             <img src="/ui/images/dp.jpg" width=20% class="img-medium"/>
@@ -43,5 +44,18 @@
   </a>
          </p>
         </footer>
+    </div>
+    <script>
+        var v1;
+        function load_func(){
+            v1= setTimeout(pagel,2000);
+        }
+        function page1(){
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("container").style.display = "block";
+        }
+    </script>
+    
+    
     </body>
 </html>
