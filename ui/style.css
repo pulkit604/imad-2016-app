@@ -1,7 +1,4 @@
-*{
-	margin:0%;
-	padding:0%;
-}
+
 body{
     font-family: sans-serif;
     background: linear-gradient(90deg,#bcbabe,#a1d6e2);
@@ -9,17 +6,7 @@ body{
     color: #9b4f0f;
 }
 
-.center {
-    text-align: center;
-}
 
-.text-big {
-    font-size: 300%;
-}
-
-.bold {
-    font-weight: bold;
-}
 
 .img-medium {
     height: 200px;
