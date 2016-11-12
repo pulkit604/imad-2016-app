@@ -8,8 +8,10 @@ body{
 
 
 
-.img-medium {
-    height: 200px;
+.img-circle {
+    width:10%;
+    height:10%;
+    margin:40%;
 }
 #footer{
     width:60%;
