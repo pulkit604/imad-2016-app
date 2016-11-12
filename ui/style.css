@@ -1,9 +1,8 @@
 *{
 	margin:0%;
 	padding:0%;
-	list-style-type:none;
 }
-body {
+body{
     font-family: sans-serif;
     background: linear-gradient(90deg,#bcbabe,#a1d6e2);
     margin-top: 75px;
