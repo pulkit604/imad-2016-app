@@ -2,6 +2,9 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
+var bodyParser = require('body-parser');
+
 
 //DB config
 var config = {
@@ -13,14 +16,9 @@ var config = {
 };
 
 
-var pool = new Pool(config);
-
-
-
-
-
 var app = express();
 app.use(morgan('combined'));
+app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -34,7 +32,27 @@ function hash(input,salt){
   
 }
 
+app.get('/create-user', function (req,res){
+  
+    var username = req.body.username;
+    var password = req.body.password;
+  
+    var salt = crypto.getRandomBytes(128).toString('hex');
+    var dbString = hash(password,salt);
+    pool.query('Insert into "user" (username, password) values ($1, $2)', [username, dbSting], function(err,result){
+      if(err){
+          res.status(500).send(err.toString());
+      }else
+      {
+          res.send('Creation of User " + username + "successful");
+                   }
+                   
+    });
+  
+});
 
+
+var pool = new Pool(config);
 
 
 
@@ -54,3 +72,12 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+      
+      
+      
+      
+      
+      
+      
+      
