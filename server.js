@@ -4,7 +4,7 @@ var path = require('path');
 var Pool = require('pg').Pool;
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
-
+var session = require('express-session');
 
 //DB config
 var config = {
@@ -19,6 +19,11 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
+app.use(session({
+  secret : '124421312' ,
+  cookie : {maxAge: 1000*60*60*24*30}
+}));
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -72,7 +77,10 @@ app.get('/create-user', function (req,res){
           var hashedPassword = hash(password,salt);
             if(hashedPassword === dbString) {
               
-          res.send('Creditentials match ');
+              req.session.auth = {userId: result.rows[0].id};
+              
+              
+              res.send('Creditentials match ');
               
                    }else {
                       res.send(403).send('The entered username or password seems invalid');
@@ -86,8 +94,19 @@ app.get('/create-user', function (req,res){
 var pool = new Pool(config);
 
 
-
-
+app.get('/check-login', function(req,res){
+      if(req.session && req.session.auth && req.session.auth.userId) {
+        res.send ('You have logged in' + req.session.auth.userId.toString());
+      }
+  else{
+    res.send('you are not logged in');
+  }
+};
+        
+app.get('/logout', function(req,res) {
+    delete req.session.auth;
+    res.send('You are logged out');
+});
 
 
 app.get('/ui/style.css', function (req, res) {
