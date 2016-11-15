@@ -1,24 +1,135 @@
-
-body{
-    font-family: sans-serif;
-    background: linear-gradient(90deg,#bcbabe,#a1d6e2);
-    margin-top: 75px;
-    color: #9b4f0f;
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+* {
+    margin: 0;
+    font-weight: bolder;
+    font-stretch: expanded;
 }
-
-
-
+#b {
+    margin-top: -20px;
+}
+.col-xl-14 {
+    background-color: #5d535e;
+}
+@font-face {
+    font-family: new;
+    src: url(fonts/SUNN.otf);
+}
+div {
+    font-family: new;
+}
+.header {
+    background-color: #f0810f;
+    text-align: center;
+    margin-top: 0px;
+}
+#hpp {
+    font-size: 400%;
+    color: #5d535e;
+}
+nav {
+    font-size: 150%;
+    margin-top: 1.4%;
+}
+.row {
+    background-color: black;
+}
+.navbar {
+    background-color: black;
+}
+#imgcon {
+    background-color: #ce5a57;
+    width: 100%;
+    color: #ffbb00;
+}
+.img-rounded {
+    margin-left: 35%;
+    width: 20%;
+}
 .img-circle {
-    width:10%;
-    height:10%;
-    margin-left:50%;
+    width: 80%;
+    height: 90%;
 }
-#footer{
-    width:60%;
+.img-thumbnail {
+    width: 5%;
 }
-#soc_but{ 
+#social {
+    margin-left: 10%;
+    margin-top: 10%;
 }
-
-.well{
-    color:black;
+#nv {
+    background-color: black;
+}
+#container {
+    display: none;
+    text-align: center;
+}
+.row {
+    display: none
+}
+#soc {
+    background-color: #b3a100;
+    font-size: 250%;
+    margin-bottom: 0;
+    text-align: center;
+    zoom: 120%;
+    height: 30%;
+    color: #7d4427;
+}
+#soca {
+    background-color: #b3a100;
+    font-size: 250%;
+    margin-bottom: 0;
+    height: 50%;
+    text-align: center;
+    zoom: 120%;
+    color: #7d4427;
+}
+#fbb,
+#twb,
+#lib,
+#inb {
+    zoom: 200%;
+}
+#a1 {
+    text-align: caption;
+    font-size: 400%;
+}
+#a2 {
+    font-size: 300%;
+    text-align: right;
+    margin-right: 14%;
+}
+.about {
+    background-color: #a30102;
+    margin: 0px;
+}
+.col-xl-15 {
+    background-color: black;
+}
+#about {
+    background-color: #f5e356;
+    width: 102%;
+    height: 65%;
+    font-size: xx-large;
+    color: #34888c;
+    margin-left: -13px;
+}
+#prof {
+    background-color: #ddbc95;
+    width: 102%;
+    height: 65%;
+    color: #b38867;
+    margin-left: -13px;
+}
+#ssk {
+    font-size: 300%;
+    font-weight: lighter;
+}
+#sk {
+    width: 140%;
+    height: 80%;
+}
+#abp {
+    margin-top: 2%;
+    margin-left: 18%;
 }
