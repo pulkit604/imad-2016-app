@@ -1,109 +1,81 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8"> 
-
-        <link href="/ui/style.css" rel="stylesheet" />
-        
-<!--Font awesome library-->        
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1" /><meta charset="utf-8"><link href="style.css" rel="stylesheet" />
+<!--Font awesome library-->
 <script src="https://use.fontawesome.com/2741c85994.js"></script>
-        
-<!--Bootstrap library-->        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        
-     <div class="container-fluid">
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-        
-        <div class="page-header">
-            
-           <h2> Hi, You've reached Pulkit's Profile... </h2>
-            
-            
-           <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <img src="ui/images/flash.jpg">
+<!--Bootstrap library-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="b">
+  <div class="col-xl-14">
+    <div class="header">
+      <h1 id="hpp"> Hi, You've reached Pulkit's Profile... </h1>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li> 
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>  
-
-
-<img src="ui/images/dp.jpg" class="img-circle" width=10% height=10%>
-
-
-
-
-
-           </div>
-           
-           </div>
-          
-        
-        
-        
-        
-        
-        <div class="row">
-            
-            
-            <h5> Login Here</h5>
-            <input type="text" placeholder="username" id="username"/>
-            <input type="password" id="password"/>
-            <input type="submit" placeholder="username" id="sub_btn"/>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </div>
-        
-
-      
-        
-        <footer>
-         <p id="social">You can connect with me</p>
-         <p id="soc_but">
-             <a class="btn btn-social-icon btn-lg btn-facebook" href="www.facebook.com/pulkit604">
-    <span class="fa fa-facebook"></span>
-  </a>
-             <a class="btn btn-social-icon btn-instagram" href="www.instagram.com/pulkit604">
-    <span class="fa fa-instagram"></span>
-  </a>
-             <a class="btn btn-social-icon btn-twitter" href="www.twitter.com/pulkit604">
-    <span class="fa fa-twitter"></span>
-  </a>
-             <a class="btn btn-social-icon btn-linkedin" href="www.linkedin.com/in/pulkit-gupta-09405045">
-    <span class="fa fa-linkedin"></span>
-  </a>
-         </p>
-         
-        </footer>
-    
-    </body>
-</html>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header"></div>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About me</a>
+          </li>
+          <li>
+            <a href="prof.html">Technical Journey</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="">
+              <span class="glyphicon glyphicon-log-in"></span> Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid" id="imgcon">
+      <p id="a1">
+Pulkit Gupta
+        <br>
+B.Tech CSE
+          <br>
+Shiv Nadar University
+            <br>
+              <img src="images/dp.jpg" class="img-rounded">
+              </p>
+              <p id="a2">
+Planning to Become a Web Developer
+</p>
+            </div>
+            <div class="row">
+              <h5> Login Here</h5>
+              <input type="text" placeholder="username" id="username"/>
+              <input type="password" id="password"/>
+              <input type="submit" placeholder="username" id="sub_btn"/>
+            </div>
+            <div class="col-sm-12" id="soc">
+              <footer >
+                <p id="social">You can connect with me
+                  <br>
+                    <a class="btn btn-social-icon btn-lg btn-facebook" id="fbb" href="https://www.facebook.com/pulkit604">
+                      <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-instagram" id="inb" href="https://www.instagram.com/pulkit604">
+                      <span class="fa fa-instagram"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-twitter" id="twb" href="https://www.twitter.com/pulkit604">
+                      <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-linkedin" id="lib" href="https://www.linkedin.com/in/pulkit-gupta-09405045">
+                      <span class="fa fa-linkedin"></span>
+                    </a>
+                  </p>
+                </footer>
+              </div>
+            </div>
+            <script type="text/javascript" src="main.js"></script>
+          </body>
+        </html>
