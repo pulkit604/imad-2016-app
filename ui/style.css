@@ -141,9 +141,8 @@ nav {
 #lh{
     font-size: 400%;
 }
-.log{
-    width:70%;    
+.log,#sub_btn{
+    width:80%;    
+    height:50%;
 }
-#sub_btn{
-    width:80%;
-}
+
