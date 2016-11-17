@@ -8,11 +8,11 @@ var session = require('express-session');
 
 //DB config
 var config = {
-  user = 'pulkit604',
-  database = 'pulkit604',
-  host = 'db.imad.hasura-app.io',
-  port = '5432',
-  password = process.env.DB_PASSWORD
+  user : 'pulkit604',
+  database : 'pulkit604',
+  host : 'db.imad.hasura-app.io',
+  port : '5432',
+  password : process.env.DB_PASSWORD
 };
 
 
@@ -118,6 +118,9 @@ app.get('/ui/images/dp.jpg', function (req, res) {
 });
 app.get('/ui/images/apb.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'apb.jpg'));
+});
+app.get('/ui/images/coll.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'coll.jpg'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
