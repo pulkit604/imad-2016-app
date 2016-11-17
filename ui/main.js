@@ -1,5 +1,12 @@
 
 
+      //popover login button
+      
+      
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+      });
+      
       
 //Submit name
       
