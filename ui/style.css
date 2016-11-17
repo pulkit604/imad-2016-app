@@ -134,13 +134,13 @@ nav {
     margin-left: 18%;
 }
 .popover{
-    width:360%;
-    height:470%;
+    width:260%;
+    height:370%;
         
 }
 #lh{
     font-size: 400%;
 }
-#log{
+.log{
     width:150%;    
 }
