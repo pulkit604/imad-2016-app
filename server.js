@@ -28,10 +28,10 @@ app.use(session({
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/about.html', function (req, res) {
+app.get('ui//about.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
-app.get('/prof.html', function (req, res) {
+app.get('ui/prof.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'prof.html'));
 });
 
