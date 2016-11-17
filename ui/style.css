@@ -12,7 +12,7 @@
 }
 @font-face {
     font-family: new;
-    src: url('fonts/SUNN.otf') format('opentype');
+    src: url('fonts/SUNN.otf') ;
 }
 div {
     font-family: new;
