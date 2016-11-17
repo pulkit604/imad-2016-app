@@ -101,7 +101,7 @@ app.get('/check-login', function(req,res){
   else{
     res.send('you are not logged in');
   }
-};
+});
         
 app.get('/logout', function(req,res) {
     delete req.session.auth;
@@ -116,7 +116,9 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/images/dp.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'dp.jpg'));
 });
-
+app.get('/ui/images/apb.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'apb.jpg'));
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
