@@ -136,6 +136,9 @@ nav {
 .popover{
     width:360%;
     height:470%;
-    
+        
+}
+#hl{
+    font-size: 500%;
 }
 }
