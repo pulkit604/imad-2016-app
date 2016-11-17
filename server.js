@@ -131,7 +131,7 @@ app.get('/ui/images/apb.jpg', function (req, res) {
 app.get('/ui/images/coll.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'coll.jpg'));
 });
-app.get('fonts/SUNN.otf', function(req,res) {
+app.get('/ui/fonts/SUNN.otf', function(req,res) {
    res.sendFile(path.join(_dirname, 'ui/fonts', 'SUNN.otf')); 
 });
 
