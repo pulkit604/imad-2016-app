@@ -5,7 +5,7 @@ console.log('Loaded!');
       
 //Submit name
       
-      var submit = document.getElementbyId('sub_btn');
+      var submit = document.getElementById('sub_btn');
       submit.onclick = function(){
         
         
@@ -26,8 +26,8 @@ console.log('Loaded!');
              
         
       
-      var username = document.getElementbyId('username').value;
-      var password = document.getElementbyId('password').value;
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
         var name = nameInput.value;
           request.open('POST', 'https://pukit604.imad.hasura-app.io/login', true);
             request.setRequestHeader('Content-Type', 'application/json');
