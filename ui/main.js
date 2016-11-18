@@ -2,8 +2,9 @@
 
       
 //Submit name
-      var submit= document.getElementById('sub_btn');
       $(document).ready(function(){
+                var submit= document.getElementById('sub_btn');
+
       submit.onclick = function(){
         
         
