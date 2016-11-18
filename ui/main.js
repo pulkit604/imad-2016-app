@@ -2,7 +2,7 @@
 
       
 //Submit name
-      document.getElementById('form').onsubmit = function(){
+      document.getElementById('sub_btn').onclick = function(){
         
           var request = new XMLHttpRequest();
         
