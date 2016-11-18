@@ -3,9 +3,9 @@
       
 //Submit name
     var login_but = document.getElementById('poplogin');
-    var submit= document.getElementById('sub_btn');
+    var submit= document.getElementById('form');
     login_but.onclick = function(){
-      submit.onclick = function(){
+      form.onsubmit = function(){
         
           var request = new XMLHttpRequest();
         
