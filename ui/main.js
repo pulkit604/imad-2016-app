@@ -2,9 +2,7 @@
 
       
 //Submit name
-      
-      var submit = document.getElementById('sub_btn');
-     
+      var submit= document.getElementById('sub_btn');
       submit.onclick = function(){
         
         
