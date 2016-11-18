@@ -3,7 +3,7 @@
       
 //Submit name
     var form= document.getElementById('form');
-      form.submit = function(){
+      form.onsubmit = function(){
         
           var request = new XMLHttpRequest();
         
