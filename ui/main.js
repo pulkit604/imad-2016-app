@@ -2,7 +2,6 @@
 
       
 //Submit name
-        alert('1');
       document.getElementById('sub_btn').onclick = function(){
     
           var request = new XMLHttpRequest();
