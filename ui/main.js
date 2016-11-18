@@ -4,7 +4,7 @@
 //Submit name
       
       var submit = document.getElementById('sub_btn');
-      $(body).onload= function(){
+      $(document).onload= function(){
       submit.onclick = function(){
         
         
