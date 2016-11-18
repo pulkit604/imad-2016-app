@@ -2,8 +2,9 @@
 
       
 //Submit name
-
+    var login_but = document.getElementById('poplogin');
     var submit= document.getElementById('sub_btn');
+    login_but.onclick = function(){
       submit.onclick = function(){
         
           var request = new XMLHttpRequest();
@@ -30,3 +31,4 @@
           request.send(JSON.stringify({username:username, password:password}));
           
         }; 
+};
