@@ -3,7 +3,7 @@
       
 //Submit name
     var login_but = document.getElementById('poplogin');
-    var submit= document.getElementById('form');
+    var form= document.getElementById('form');
     login_but.onclick = function(){
       form.onsubmit = function(){
         
