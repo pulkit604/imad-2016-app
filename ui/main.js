@@ -2,8 +2,10 @@
 
       
 //Submit name
-      window.onload = function(){
-     document.getElementById('sub_btn').onclick=function(){
+      
+      
+      $(document).ready(function(){
+     $('sub_btn').click(function(){
         
         
           var request = new XMLHttpRequest();
@@ -19,7 +21,7 @@
               }
           }
         };
-     };
+     });
              
         
       
