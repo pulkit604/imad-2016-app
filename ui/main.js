@@ -3,9 +3,9 @@
       
 //Submit name
       
-      
-      $(document).ready(function(){
-     $('sub_btn').click(function(){
+      var submit = document.getElementById('sub_btn');
+     
+      submit.onclick = function(){
         
         
           var request = new XMLHttpRequest();
@@ -20,8 +20,8 @@
                     alert('Server error');
               }
           }
-        });
-     });
+        };
+      };
              
         
       
