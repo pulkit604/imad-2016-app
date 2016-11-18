@@ -136,7 +136,7 @@ nav {
 .popover{
     width:260%;
     height:370%;
-
+    background:tomato;
 }
 #lh{
     font-size: 400%;
