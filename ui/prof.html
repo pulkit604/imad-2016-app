@@ -36,7 +36,21 @@
       <li><a href="/ui/prof.html">Technical Journey</a></li> 
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href=""><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="#" data-toggle="popover" data-html="true" data-placement="left" data-content='<h3 id="lh"> Login Here</h3>
+              <input class="log" type="text" placeholder="username" id="username"/><br>
+              <input class="log" type="password" id="password"/><br><br>
+              <input type="submit" placeholder="username" id="sub_btn"/>'>
+               <span class="glyphicon glyphicon-log-in"></span>  Login
+            </a>
+            <script>
+      <!--popover login button-->
+      
+      
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+      });
+      </script>
+         </li>
     </ul>
   </div>
 </nav>
