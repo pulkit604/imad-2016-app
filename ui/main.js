@@ -20,7 +20,7 @@
                     alert('Server error');
               }
           }
-        };
+        });
      });
              
         
