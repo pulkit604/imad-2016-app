@@ -3,6 +3,7 @@
       
 //Submit name
       var submit= document.getElementById('sub_btn');
+      $(document).ready(function(){
       submit.onclick = function(){
         
         
@@ -31,3 +32,4 @@
           request.send(JSON.stringify({username:username, password:password}));
         };  
       
+});
