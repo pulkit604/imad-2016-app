@@ -5,8 +5,7 @@
     var login_but = document.getElementById('poplogin');
     var submit= document.getElementById('sub_btn');
     login_but.onclick = function(){
-        document.getElementById('body').onload = function(){
-      submit.onclick = function(){
+      submit.onload = function(){
         
           var request = new XMLHttpRequest();
         
