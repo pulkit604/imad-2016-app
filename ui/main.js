@@ -25,6 +25,7 @@
       var username = document.getElementById('username').value;
       var password = document.getElementById('password').value;
           request.open('POST', 'https://pukit604.imad.hasura-app.io/login', true);
+          alert('logged in');
             request.setRequestHeader('Content-Type', 'application/json');
           request.send(JSON.stringify({username:username, password:password}));
           
