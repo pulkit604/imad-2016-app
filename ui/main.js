@@ -3,7 +3,7 @@
       
 //Submit name
       document.getElementById('sub_btn').onclick = function(){
-        
+        alert('1');
           var request = new XMLHttpRequest();
         
         request.onreadystatechange = function() {
