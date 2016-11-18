@@ -3,7 +3,6 @@
       
 //Submit name
     var form= document.getElementById('form');
-    login_but.onclick = function(){
       form.submit = function(){
         
           var request = new XMLHttpRequest();
@@ -31,4 +30,4 @@
           
         }; 
         
-    };
+    
