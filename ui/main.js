@@ -2,10 +2,8 @@
 
       
 //Submit name
-       $(document).onload= function(){
-           
-      var submit = document.getElementById('sub_btn');
-      submit.onclick = function(){
+      window.onload = function(){
+     document.getElementById('sub_btn').onclick=function(){
         
         
           var request = new XMLHttpRequest();
@@ -21,7 +19,7 @@
               }
           }
         };
-      };
+     };
              
         
       
