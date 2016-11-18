@@ -2,8 +2,9 @@
 
       
 //Submit name
-      document.getElementById('sub_btn').onclick = function(){
         alert('1');
+      document.getElementById('sub_btn').onclick = function(){
+    
           var request = new XMLHttpRequest();
         
         request.onreadystatechange = function() {
