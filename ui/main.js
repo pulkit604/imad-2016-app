@@ -18,8 +18,6 @@
           }
         };
       
-                       alert('logged in');
-
         
       
       var username = document.getElementById('username').value;
