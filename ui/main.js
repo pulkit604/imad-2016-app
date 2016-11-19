@@ -7,7 +7,7 @@
           var request = new XMLHttpRequest();
         
         request.onreadystatechange = function() {
-          if(reuest.readyState === XMLHttpRequest.DONE) {
+          if(request.readyState === XMLHttpRequest.DONE) {
               if(request.status ===200){
                   alert('Login successful');
               }else if(request.status === 403){
