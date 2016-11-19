@@ -66,7 +66,7 @@ nav {
 .row {
     display: none
 }
-#soc {
+#soc ,#soca{
     background-color: #b3a100;
     font-size: 200%;
     margin-bottom: 0;
@@ -75,15 +75,7 @@ nav {
     height: 30%;
     color: #7d4427;
 }
-#soca {
-    background-color: #b3a100;
-    font-size: 250%;
-    margin-bottom: 0;
-    height: 50%;
-    text-align: center;
-    zoom: 120%;
-    color: #7d4427;
-}
+
 #fbb,
 #twb,
 #lib,
