@@ -36,7 +36,9 @@ app.get('/ui/about.html', function (req, res) {
 app.get('/ui/prof.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'prof.html'));
 });
-
+app.get('/ui/login.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+});
 
 function hash(input,salt){
   
