@@ -23,9 +23,9 @@
       var username = document.getElementById('username').value;
       var password = document.getElementById('password').value;
           request.open('POST', '/login', true);
-          alert(1);
+         
             request.setRequestHeader('Content-Type', 'application/json');
-            alert(2);
+
           request.send(JSON.stringify({username:username, password:password}));
           
         }; 
