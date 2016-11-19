@@ -67,7 +67,6 @@ app.get('/create-user', function (req,res){
 });
 
 
-      
       app.post('/login', function(req,res){
         
     var username = document.getElementById('username');
