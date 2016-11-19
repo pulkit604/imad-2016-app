@@ -20,13 +20,13 @@
       
         
       
-      var username =1;// document.getElementById('username').value;
-      var password =2;// document.getElementById('password').value;
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
           request.open('POST', '/login', true);
          
             request.setRequestHeader('Content-Type', 'application/json');
 
-          request.send(JSON.stringify({"username":username, "password":password}));
+          request.send(JSON.stringify({'username':username, 'password':password}));
           
         }; 
         
