@@ -49,8 +49,8 @@ function hash(input,salt){
 
 app.get('/create-user', function (req,res){
   
-    var username = document.getElementById('username');
-    var password = document.getElementById('password');
+    var username =req.body.username;
+    var password = req.body.password;
   
     var salt = crypto.getRandomBytes(128).toString('hex');
     var dbString = hash(password,salt);
